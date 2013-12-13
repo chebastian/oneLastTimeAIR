@@ -36,7 +36,6 @@ package Particles
 			mAnimations = mAnimationsLoader.getAnimationBank();
 			mAnimations.registerAnimationsToSprite(this);
 			mAnimations.playAnimation("fire", this);
-			mAnimations.playAnimation("hit", this);
 		}
 		
 		
