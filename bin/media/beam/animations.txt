@@ -1,0 +1,41 @@
+{
+	"animations":
+	[
+		{
+			"img":"beam",
+			"src":"../media/beam/beam.png",
+			"fw":"8",
+			"fh":"8",
+			"fps":"25",
+			"looped":"true",
+
+			"clips":
+			[
+				{
+					"origin_x":"0",
+					"origin_y":"0",
+					"name":"beamLeft",
+					"frames":"0"
+				},
+				{
+					"origin_x":"0",
+					"origin_y":"0",
+					"name":"beamRight",
+					"frames":"3"
+				},
+				{
+					"origin_x":"0",
+					"origin_y":"0",
+					"name":"fire",
+					"frames":"1,2"
+				},
+				{
+					"origin_x":"0",
+					"origin_y":"0",
+					"name":"explode",
+					"frames":"4,5"	
+				}
+			]
+		}
+	]
+}

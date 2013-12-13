@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<level id = "stage" w = "4" h = "4">
+	<rooms>
+		<room id = "1" file = "../media/levels/level_1/open_fourway_layered.xml" indexX = "0" indexY = "0"/>
+		<room id = "2" file = "../media/levels/level_1/cave_first_room.xml" indexX = "1" indexY = "0"/>
+		<room id = "3" file = "../media/levels/level_1/empty.xml" indexX = "2" indexY = "0"/>
+		<room id = "4" file = "../media/levels/level_1/empty.xml" indexX = "0" indexY = "1"/>
+		<room id = "5" file = "../media/levels/level_1/empty.xml" indexX = "1" indexY = "1"/>
+		<room id = "6" file = "../media/levels/level_1/empty.xml" indexX = "2" indexY = "1"/>
+		<room id = "7" file = "../media/levels/level_1/empty.xml" indexX = "0" indexY = "2"/>
+		<room id = "8" file = "../media/levels/level_1/empty.xml" indexX = "1" indexY = "2"/>
+		<room id = "9" file = "../media/levels/level_1/empty.xml" indexX = "2" indexY = "2"/>
+	</rooms>
+	
+	<tilemap file = "../media/zelda_tiles_16_16.png" cellw = "16"/>
+</level>

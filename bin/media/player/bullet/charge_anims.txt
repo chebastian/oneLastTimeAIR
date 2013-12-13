@@ -1,0 +1,30 @@
+{
+	"animations":
+	[
+		{
+			"img":"chargedBullet",
+			"src":"../media/player/bullet/charge.png",
+			"fw":"5",
+			"fh":"5",
+			"fps":"10",
+			"looped":"false",
+
+			"clips":
+			[
+				{
+					"origin_x":"0",
+					"origin_y":"0",
+					"name":"fire",
+					"frames":"0,1,2,3,4"
+				},
+				{
+					"origin_x":"0",
+					"origin_y":"0",
+					"name":"explode",
+					"frames":"3,4"
+				}
+			]
+		}
+	]
+	
+}

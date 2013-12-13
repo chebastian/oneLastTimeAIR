@@ -1,0 +1,55 @@
+{
+	"animations":
+	[
+		{
+			"img":"jumper",
+			"src":"../media/enemy/jumper/jumper.png",
+			"fw":"7",
+			"fh":"8",
+			"fps":"10",
+			"looped":"true",
+
+			"clips":
+			[
+
+				{
+					"origin_x":"0",
+					"origin_y":"0",
+					"name":"idle",
+					"frames":"0"
+				},
+				{
+					"origin_x":"0",
+					"origin_y":"0",
+					"name":"jump",
+					"frames":"0,1,2,3,4"
+				},
+				{
+					"origin_x":"0",
+					"origin_y":"0",
+					"name":"hurt",
+					"frames":"3,4,5,4,6,3"	
+				}
+			]
+		},
+		{
+			"img":"explosion",
+			"src":"../media/explosion.png",
+			"fw":"8",
+			"fh":"8",
+			"fps":"20",
+			"looped":"true",
+
+			"clips":
+			[
+				{
+					"origin_x":"0",
+					"origin_y":"0",
+					"name":"death",
+					"frames":"0,1,2,3,2,3,1,0,2"
+				}
+			]
+		}
+	]
+	
+}

@@ -1,0 +1,63 @@
+{
+	"animations":
+	[
+		{
+			"img":"Player_Sheet",
+			"src":"../media/Player_sheet.png",
+			"fps":"10",
+			"fw":"16",
+			"fh":"16",
+			"looped":"true",
+			"origin_x":"0",
+			"origin_y":"0",
+			
+			"clips":
+			[
+				{
+					"name":"walkRight",
+					"frames":"0,1,2,3"
+				},
+
+				{
+					"name":"walkLeft",
+					"frames":"4,5,6,7"
+				},
+
+				{
+					"name":"walkDown",
+					"frames":"8,9,10"
+				},
+
+				{
+					"name":"walkUp",
+					"frames":"11,12,13"
+				}
+			]
+		},
+
+		{
+			"img":"Player_Attack",
+			"src":"../media/player_attack.png",
+			"fw":"24",
+			"fh":"16",
+			"fps":"10",
+			"looped":"false",
+			"origin_x":"-8",
+			"origin_y":"0",
+
+			"clips":
+			[
+				{
+					"name":"attackR",
+					"frames":"0,1,0"
+				},
+				{
+					"name":"attackL	",
+					"frames":"2,3,2"
+				}
+			]
+
+		}
+	]
+	
+}

@@ -1,0 +1,15 @@
+<level h="1" id="wipTiles" tile_h="32" tile_w="32" w="1">
+<rooms>
+<room file="Room00.xml" id="0" indexX="0" indexY="0" name="Room00">
+<gameObjects>
+<doorSwitch open="true" x="2" y="3"/>
+<door open="false" x="3" y="5"/>
+<door open="false" x="2" y="5"/>
+<door open="false" x="1" y="5"/>
+<door open="true" x="12" y="5"/>
+<door open="true" x="13" y="5"/>
+</gameObjects>
+</room>
+</rooms>
+<tilemap file="none.atm"/>
+</level>

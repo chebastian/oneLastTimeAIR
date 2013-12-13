@@ -1,0 +1,78 @@
+<level h="5" id="enemyTest" tile_h="32" tile_w="32" w="5">
+<rooms>
+<room file="Room0000000000000000000000000000.xml" id="0" indexX="0" indexY="0" name="Room0000000000000000000000000000">
+<gameObjects>
+<enemy open="false" type="turretL" x="10" y="5"/>
+<enemy open="false" type="turretL" x="6" y="6"/>
+<enemy open="false" type="turretR" x="1" y="8"/>
+<enemy open="false" type="turretDown" x="12" y="5"/>
+<enemy open="false" type="turretUp" x="5" y="8"/>
+</gameObjects>
+</room>
+<room file="Room121111111111.xml" id="1" indexX="2" indexY="4" name="Room121111111111">
+<gameObjects/>
+</room>
+<room file="Room112222222222.xml" id="2" indexX="1" indexY="4" name="Room112222222222">
+<gameObjects/>
+</room>
+<room file="Room103333333333.xml" id="3" indexX="0" indexY="4" name="Room103333333333">
+<gameObjects/>
+</room>
+<room file="Room134444444444.xml" id="4" indexX="3" indexY="4" name="Room134444444444">
+<gameObjects/>
+</room>
+<room file="Room155555555555.xml" id="5" indexX="4" indexY="3" name="Room155555555555">
+<gameObjects/>
+</room>
+<room file="Room66666666666.xml" id="6" indexX="0" indexY="3" name="Room66666666666">
+<gameObjects/>
+</room>
+<room file="Room97777777777.xml" id="7" indexX="2" indexY="2" name="Room97777777777">
+<gameObjects/>
+</room>
+<room file="Room148888888888.xml" id="8" indexX="3" indexY="3" name="Room148888888888">
+<gameObjects/>
+</room>
+<room file="Room49999999999.xml" id="9" indexX="1" indexY="2" name="Room49999999999">
+<gameObjects/>
+</room>
+<room file="Room3111111111111110101010101010101010.xml" id="10" indexX="2" indexY="1" name="Room3111111111111110101010101010101010">
+<gameObjects>
+<enemy open="true" type="" x="12" y="2"/>
+<enemy open="true" type="" x="12" y="5"/>
+<enemy open="true" type="" x="10" y="7"/>
+</gameObjects>
+</room>
+<room file="Room2222222222222211111111111111111111.xml" id="11" indexX="1" indexY="1" name="Room2222222222222211111111111111111111">
+<gameObjects>
+<door open="true" type="" x="8" y="2"/>
+<doorSwitch open="true" type="" x="13" y="2"/>
+<enemy open="false" type="turretR" x="1" y="2"/>
+</gameObjects>
+</room>
+<room file="Room512131213121312131213.xml" id="12" indexX="0" indexY="2" name="Room512131213121312131213">
+<gameObjects/>
+</room>
+<room file="Room813121312131213121312.xml" id="13" indexX="2" indexY="3" name="Room813121312131213121312">
+<gameObjects/>
+</room>
+<room file="Room714141414141414141414.xml" id="14" indexX="1" indexY="3" name="Room714141414141414141414">
+<gameObjects/>
+</room>
+<room file="Room1333333333333315151515151515151515.xml" id="15" indexX="0" indexY="1" name="Room1333333333333315151515151515151515">
+<gameObjects>
+<door open="true" type="" x="5" y="7"/>
+<door open="true" type="" x="5" y="8"/>
+<doorSwitch open="true" type="" x="11" y="3"/>
+<beam open="false" type="beam" x="8" y="7"/>
+<beam open="false" type="beam" x="6" y="7"/>
+<beam open="false" type="beam" x="7" y="7"/>
+<enemy open="false" type="walker" x="4" y="3"/>
+<enemy open="false" type="walker" x="4" y="5"/>
+<enemy open="false" type="walker" x="2" y="6"/>
+<enemy open="false" type="turretL" x="13" y="5"/>
+</gameObjects>
+</room>
+</rooms>
+<tilemap file="none.atm"/>
+</level>

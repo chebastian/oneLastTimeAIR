@@ -1,0 +1,52 @@
+<level h="2" id="enemyTest" tile_h="32" tile_w="32" w="3">
+<rooms>
+<room file="Room000000000000.xml" id="0" indexX="0" indexY="0" name="Room000000000000">
+<gameObjects>
+<beam open="false" type="beam" x="1" y="7"/>
+<beam open="false" type="beam" x="2" y="7"/>
+<beam open="false" type="beam" x="3" y="7"/>
+<beam open="false" type="beam" x="4" y="7"/>
+<door open="true" type="redSwitch" x="1" y="5"/>
+<door open="true" type="redSwitch" x="2" y="5"/>
+<door open="true" type="redSwitch" x="3" y="5"/>
+<door open="false" type="blueSwitch" x="12" y="5"/>
+<door open="false" type="blueSwitch" x="13" y="5"/>
+<doorSwitch open="false" type="doorSwitch" x="2" y="3"/>
+</gameObjects>
+</room>
+<room file="Room31111111.xml" id="1" indexX="2" indexY="1" name="Room31111111">
+<gameObjects>
+<enemy open="true" type="" x="12" y="2"/>
+<enemy open="true" type="" x="12" y="5"/>
+<enemy open="true" type="" x="10" y="7"/>
+</gameObjects>
+</room>
+<room file="Room22222222.xml" id="2" indexX="1" indexY="1" name="Room22222222">
+<gameObjects>
+<door open="true" type="" x="8" y="2"/>
+<doorSwitch open="true" type="" x="13" y="2"/>
+<enemy open="false" type="turretR" x="1" y="2"/>
+</gameObjects>
+</room>
+<room file="Room13333333.xml" id="3" indexX="0" indexY="1" name="Room13333333">
+<gameObjects>
+<door open="true" type="" x="5" y="2"/>
+<door open="true" type="" x="5" y="3"/>
+<door open="true" type="" x="5" y="4"/>
+<door open="true" type="" x="5" y="5"/>
+<door open="true" type="" x="5" y="6"/>
+<door open="true" type="" x="5" y="7"/>
+<door open="true" type="" x="5" y="8"/>
+<doorSwitch open="true" type="" x="11" y="3"/>
+<beam open="false" type="beam" x="8" y="7"/>
+<beam open="false" type="beam" x="6" y="7"/>
+<beam open="false" type="beam" x="7" y="7"/>
+<enemy open="false" type="walker" x="4" y="3"/>
+<enemy open="false" type="walker" x="4" y="5"/>
+<enemy open="false" type="walker" x="2" y="6"/>
+<enemy open="false" type="turretL" x="13" y="5"/>
+</gameObjects>
+</room>
+</rooms>
+<tilemap file="none.atm"/>
+</level>

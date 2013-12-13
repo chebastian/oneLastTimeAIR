@@ -1,0 +1,30 @@
+<level h="3" id="maintest" tile_h="32" tile_w="32" w="2">
+<rooms>
+<room file="00000000000.xml" id="0" indexX="0" indexY="0" name="00000000000">
+<gameObjects>
+<door open="false" x="7" y="8"/>
+<doorSwitch open="false" x="9" y="1"/>
+<levelLink open="false" x="1" y="0"/>
+</gameObjects>
+</room>
+<room file="Room111111111.xml" id="1" indexX="1" indexY="2" name="Room111111111">
+<gameObjects/>
+</room>
+<room file="Room3222222.xml" id="2" indexX="1" indexY="1" name="Room3222222">
+<gameObjects>
+<door open="false" x="9" y="5"/>
+<portal open="false" x="7" y="0"/>
+</gameObjects>
+</room>
+<room file="1233333333.xml" id="3" indexX="1" indexY="0" name="1233333333">
+<gameObjects>
+<door open="false" x="5" y="6"/>
+<doorSwitch open="false" x="9" y="5"/>
+</gameObjects>
+</room>
+<room file="Room2344444444.xml" id="4" indexX="0" indexY="1" name="Room2344444444">
+<gameObjects/>
+</room>
+</rooms>
+<tilemap file="none.atm"/>
+</level>

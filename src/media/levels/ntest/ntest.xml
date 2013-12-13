@@ -1,0 +1,13 @@
+<level h="3" id="ntest" tile_h="32" tile_w="32" w="2">
+<rooms>
+<room file="0000000.xml" id="0" indexX="0" indexY="0" name="0000000"/>
+<room file="Room11111.xml" id="1" indexX="1" indexY="2" name="Room11111"/>
+<room file="Room322.xml" id="2" indexX="1" indexY="1" name="Room322"/>
+<room file="123333.xml" id="3" indexX="1" indexY="0" name="123333"/>
+<room file="Room34.xml" id="4" indexX="0" indexY="1" name="Room34"/>
+</rooms>
+<tilemap file="none.atm"/>
+<game_objects>
+<doors/>
+</game_objects>
+</level>

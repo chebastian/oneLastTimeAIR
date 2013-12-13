@@ -1,0 +1,47 @@
+<level h="2" id="testy" tile_h="32" tile_w="32" w="3">
+<rooms>
+<room file="Room000000.xml" id="0" indexX="0" indexY="0" name="Room000000">
+<gameObjects>
+<doorSwitch open="true" x="2" y="3"/>
+<door open="false" x="3" y="5"/>
+<door open="false" x="2" y="5"/>
+<door open="false" x="1" y="5"/>
+<door open="true" x="12" y="5"/>
+<door open="true" x="13" y="5"/>
+</gameObjects>
+</room>
+<room file="Room31.xml" id="1" indexX="2" indexY="1" name="Room31">
+<gameObjects>
+<enemy open="true" x="12" y="2"/>
+<enemy open="true" x="12" y="5"/>
+<enemy open="true" x="10" y="7"/>
+</gameObjects>
+</room>
+<room file="Room22.xml" id="2" indexX="1" indexY="1" name="Room22">
+<gameObjects>
+<door open="true" x="8" y="2"/>
+<turretR open="true" x="1" y="2"/>
+<doorSwitch open="true" x="13" y="2"/>
+<turretR open="true" x="1" y="3"/>
+</gameObjects>
+</room>
+<room file="Room13.xml" id="3" indexX="0" indexY="1" name="Room13">
+<gameObjects>
+<door open="true" x="5" y="2"/>
+<door open="true" x="5" y="3"/>
+<door open="true" x="5" y="4"/>
+<door open="true" x="5" y="5"/>
+<door open="true" x="5" y="6"/>
+<door open="true" x="5" y="7"/>
+<door open="true" x="5" y="8"/>
+<doorSwitch open="true" x="11" y="3"/>
+<enemy open="true" x="2" y="3"/>
+<enemy open="true" x="3" y="4"/>
+<enemy open="true" x="3" y="5"/>
+<enemy open="true" x="3" y="6"/>
+<enemy open="true" x="2" y="7"/>
+</gameObjects>
+</room>
+</rooms>
+<tilemap file="none.atm"/>
+</level>

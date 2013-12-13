@@ -1,0 +1,8 @@
+<level id = "AOpenLevel" h="2" tile_h="32" tile_w="32" w="2">
+<rooms>
+<room file="nil.xml" id="0" indexX="0" indexY="0" name="nil"/>
+<room file="Room2.xml" id="1" indexX="-1" indexY="1" name="Room2"/>
+<room file="Room1.xml" id="2" indexX="0" indexY="1" name="Room1"/>
+</rooms>
+<tilemap file="none.atm"/>
+</level>

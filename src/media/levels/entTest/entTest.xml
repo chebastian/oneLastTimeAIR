@@ -1,0 +1,11 @@
+<level h="1" id="entTest" tile_h="32" tile_w="32" w="2">
+<rooms>
+<room file="Room00.xml" id="0" indexX="0" indexY="0" name="Room00">
+<gameObjects/>
+</room>
+<room file="Room1.xml" id="1" indexX="1" indexY="0" name="Room1">
+<gameObjects/>
+</room>
+</rooms>
+<tilemap file="none.atm"/>
+</level>

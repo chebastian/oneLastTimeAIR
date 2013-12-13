@@ -1,0 +1,8 @@
+<level h="4" id="ss" tile_h="32" tile_w="32" w="3">
+<rooms>
+<room file="00.xml" id="0" indexX="5" indexY="6" name="00"/>
+<room file="Room122.xml" id="1" indexX="5" indexY="7" name="Room122"/>
+<room file="Room211.xml" id="2" indexX="4" indexY="7" name="Room211"/>
+</rooms>
+<tilemap file="none.atm"/>
+</level>

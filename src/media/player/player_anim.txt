@@ -1,0 +1,117 @@
+{
+	"animations":
+	[
+		{
+			"img":"playerWalkDown",
+			"src":"../media/player/walkDown.png",
+			"fw":"8",
+			"fh":"12",
+			"fps":"10",
+			"looped":"true",
+
+			"clips":
+			[
+				{
+					"origin_x":"0",
+					"origin_y":"0",
+					"name":"walkDown",
+					"frames":"1,2"
+				}
+			]
+
+		},
+		{
+			"img":"playerWalkRight",
+			"src":"../media/player/walkRight.png",
+			"fw":"8",
+			"fh":"12",
+			"fps":"10",
+			"looped":"true",
+
+			"clips":
+			[
+				{
+					"origin_x":"0",
+					"origin_y":"0",
+					"name":"walkRight",
+					"frames":"1,2,3,4"
+				}
+			]
+
+		},
+		{
+			"img":"playerWalkLeft",
+			"src":"../media/player/walkLeft.png",
+			"fw":"8",
+			"fh":"12",
+			"fps":"10",
+			"looped":"true",
+
+			"clips":
+			[
+				{
+					"origin_x":"0",
+					"origin_y":"0",
+					"name":"walkLeft",
+					"frames":"1,2,3,4"
+				}
+			]
+
+		},
+		{
+			"img":"playerWalkUp",
+			"src":"../media/player/walkUp.png",
+			"fw":"8",
+			"fh":"12",
+			"fps":"10",
+			"looped":"true",
+
+			"clips":
+			[
+				{
+					"origin_x":"0",
+					"origin_y":"0",
+					"name":"walkUp",
+					"frames":"1,2"
+				}
+			]
+		},
+		{
+			"img":"explosion",
+			"src":"../media/explosion.png",
+			"fw":"8",
+			"fh":"8",
+			"fps":"20",
+			"looped":"false",
+
+			"clips":
+			[
+				{
+					"origin_x":"0",
+					"origin_y":"0",
+					"name":"death",
+					"frames":"0,1,2,3,2,3,1,0,2"
+				}
+			]
+		},
+		{
+			"img":"explosion",
+			"src":"../media/explosion.png",
+			"fw":"8",
+			"fh":"8",
+			"fps":"20",
+			"looped":"false",
+
+			"clips":
+			[
+				{
+					"origin_x":"0",
+					"origin_y":"0",
+					"name":"spawn",
+					"frames":"4,5,6,7,6,4,5,7,4"
+				}
+			]
+		}
+	]
+	
+}

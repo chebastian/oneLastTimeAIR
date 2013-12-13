@@ -1,0 +1,32 @@
+
+
+
+
+Annat Hem -> Kyrkogård -> Tågstation -> Kajen BTH (stor båt, fabrik)
+HemHem -> underBron -> Pingisrum -> Bargolvet (Tomt)
+Lule Hem -> Kontor -> Ishotel -> Klippa med skog/OrmBerget
+NytHem -> Slut
+
+
+#1: Butter Bay
+AnnatHem : TV/Dator Fotölj, EnkelSäng 
+Kyrkogård : Gravstenar, Träd, Husvägg
+Tågstation : Räls, Tåg kommer och går
+BTH : Skolväggen, Pelare, Stora fönster
+Kajen : Fabrik, Vatten, Stor Båt
+
+#2: Vässan
+HemHem: Soffa, TV
+UnderBron: Grafiti, Tåg, Väg
+Pingisrum: ???
+Bargolv: Bar, Blinkande lampa, trapp ut
+
+
+#3: Lule 
+LuleHem: DubbelSäng, kattlåda, stol(grön)
+Kontor: Datorer, Telefon, Papperskorg
+Ishotel: ??
+Ormberget: Klippavsats, utsikt, skog.
+
+#4 Idag:
+Nyhem: Dubbelsäng, fönster, Ingen utgång.

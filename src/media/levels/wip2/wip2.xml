@@ -1,0 +1,72 @@
+<level h="3" id="wip2" tile_h="32" tile_w="32" w="3">
+<rooms>
+<room file="Room01.xml" id="0" indexX="0" indexY="0" name="Room01">
+<gameObjects>
+<doorSwitch open="true" x="11" y="3"/>
+<door open="false" x="3" y="6"/>
+<door open="false" x="11" y="6"/>
+<door open="false" x="12" y="6"/>
+<door open="false" x="13" y="6"/>
+<door open="false" x="2" y="6"/>
+<door open="false" x="1" y="6"/>
+</gameObjects>
+</room>
+<room file="Room50.xml" id="1" indexX="2" indexY="2" name="Room50">
+<gameObjects>
+<door open="false" x="1" y="3"/>
+<door open="false" x="2" y="3"/>
+<door open="false" x="3" y="3"/>
+<door open="false" x="4" y="3"/>
+<door open="false" x="5" y="3"/>
+<door open="false" x="6" y="3"/>
+<door open="false" x="6" y="4"/>
+<door open="false" x="6" y="5"/>
+<door open="false" x="6" y="6"/>
+<door open="false" x="6" y="7"/>
+<door open="false" x="6" y="8"/>
+<door open="false" x="7" y="3"/>
+<door open="false" x="8" y="3"/>
+<door open="false" x="9" y="3"/>
+<door open="false" x="10" y="3"/>
+<door open="false" x="11" y="3"/>
+<door open="false" x="12" y="3"/>
+<door open="false" x="13" y="3"/>
+</gameObjects>
+</room>
+<room file="Room42.xml" id="2" indexX="1" indexY="2" name="Room42">
+<gameObjects>
+<doorSwitch open="true" x="2" y="2"/>
+<door open="true" x="10" y="1"/>
+<door open="true" x="10" y="2"/>
+<door open="true" x="10" y="3"/>
+<door open="true" x="10" y="4"/>
+<door open="true" x="10" y="5"/>
+<door open="true" x="10" y="6"/>
+<door open="true" x="10" y="7"/>
+<door open="true" x="10" y="8"/>
+<door open="false" x="4" y="1"/>
+<door open="false" x="4" y="2"/>
+<door open="false" x="4" y="3"/>
+<door open="false" x="4" y="4"/>
+<door open="false" x="4" y="5"/>
+<door open="false" x="4" y="6"/>
+<door open="false" x="4" y="7"/>
+<door open="false" x="4" y="8"/>
+</gameObjects>
+</room>
+<room file="Room23.xml" id="3" indexX="1" indexY="1" name="Room23">
+<gameObjects>
+<doorSwitch open="true" x="3" y="5"/>
+</gameObjects>
+</room>
+<room file="Room34.xml" id="4" indexX="0" indexY="2" name="Room34">
+<gameObjects/>
+</room>
+<room file="Room15.xml" id="5" indexX="0" indexY="1" name="Room15">
+<gameObjects>
+<door open="true" x="1" y="6"/>
+</gameObjects>
+</room>
+</rooms>
+<tilemap file="none.atm"/>
+</level>

@@ -1,0 +1,20 @@
+<level h="3" id="uno" tile_h="32" tile_w="32" w="2">
+<rooms>
+<room file="000000.xml" id="0" indexX="0" indexY="0" name="000000">
+<gameObjects/>
+</room>
+<room file="Room1111.xml" id="1" indexX="1" indexY="2" name="Room1111">
+<gameObjects/>
+</room>
+<room file="Room32.xml" id="2" indexX="1" indexY="1" name="Room32">
+<gameObjects/>
+</room>
+<room file="12333.xml" id="3" indexX="1" indexY="0" name="12333">
+<gameObjects/>
+</room>
+<room file="Room23444.xml" id="4" indexX="0" indexY="1" name="Room23444">
+<gameObjects/>
+</room>
+</rooms>
+<tilemap file="none.atm"/>
+</level>

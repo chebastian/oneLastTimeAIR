@@ -1,0 +1,33 @@
+{
+	"animations":
+	[
+		{
+			"img":"wallSwitch",
+			"src":"../media/wallSwitch/wallSwitch.png",
+			"fw":"8",
+			"fh":"8",
+			"fps":"10",
+			"looped":"false",
+
+			"clips":
+			[
+				{
+					"origin_x":"0",
+					"origin_y":"0",
+					"name":"open",
+					"looped":"false",
+					"frames":"0,1,2,3"
+				},
+				{
+					"origin_x":"0",
+					"origin_y":"0",
+					"name":"closed",
+					"looped":"false",
+					"frames":"4,5,6,7"
+				}
+			]
+
+		}
+	]
+	
+}

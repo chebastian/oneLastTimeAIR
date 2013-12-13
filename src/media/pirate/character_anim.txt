@@ -1,0 +1,134 @@
+{
+	"animations":
+	[
+		{
+			"img":"Pirate_walkD",
+			"src":"../media/pirate/pirate_walkD2.png",
+			"fw":"24",
+			"fh":"32",
+			"fps":"15",
+			"looped":"true",
+
+			"clips":
+			[
+				{
+					"origin_x":"0",
+					"origin_y":"0",
+					"name":"walkDown",
+					"frames":"0,1,2,3,4,5,6,7"
+				}
+			]
+
+		},
+		{
+			"img":"Pirate_walkLR",
+			"src":"../media/pirate/pirate_walkLR.png",
+			"fw":"24",
+			"fh":"32",
+			"fps":"10",
+			"looped":"true",
+
+			"clips":
+			[
+				{
+					"origin_x":"0",
+					"origin_y":"0",
+					"name":"walkRight",
+					"frames":"0,1,2,3,4"
+				},
+				{
+					"origin_x":"0",
+					"origin_y":"0",
+					"name":"walkLeft",
+					"frames":"5,6,7,8"
+				}
+			]
+
+		},
+		{
+			"img":"Pirate_walkU",
+			"src":"../media/pirate/pirate_walkU.png",
+			"fw":"24",
+			"fh":"32",
+			"fps":"10",
+			"looped":"true",
+
+			"clips":
+			[
+				{
+					"origin_x":"0",
+					"origin_y":"0",
+					"name":"walkUp",
+					"frames":"0,1,2,3,4,5,6,7"
+				}
+			]
+
+		},
+		
+		{
+			"img":"Pirate_attackR",
+			"src":"../media/pirate/pirate_stabLR.png",
+			"fw":"32",
+			"fh":"32",
+			"fps":"15",
+			"looped":"true",
+
+			"clips":
+			[
+				{
+					"origin_x":"0",
+					"origin_y":"0",
+					"name":"attackR",
+					"frames":"0,1,2,1"
+				},
+
+				{
+					"origin_x":"-14",
+					"origin_y":"0",
+					"name":"attackL",
+					"frames":"3,4,5,5,4"
+				}
+			]
+
+		},
+
+		{
+			"img":"Pirate_AttackU",
+			"src":"../media/pirate/pirate_attackU.png",
+			"fw":"24",
+			"fh":"32",
+			"fps":"12",
+			"looped":"true",
+
+			"clips":
+			[
+				{
+					"origin_x":"0",
+					"origin_y":"0",
+					"name":"attackU",
+					"frames":"0,1,2,3"
+				}
+			]
+
+		},
+		{
+			"img":"Pirate_AttackD",
+			"src":"../media/pirate/pirate_attackD2_effect.png",
+			"fw":"24",
+			"fh":"32",
+			"fps":"15",
+			"looped":"true",
+
+			"clips":
+			[
+				{
+					"origin_x":"0",
+					"origin_y":"8",
+					"name":"attackD",
+					"frames":"0,1,2,3,0"
+				}			]
+
+		}
+	]
+	
+}

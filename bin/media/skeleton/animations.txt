@@ -1,0 +1,51 @@
+{
+	"animations":
+	[
+		{
+			"img":"Skeleton_walkLR",
+			"src":"../media/skeleton/walk_LR.png",
+			"fps":"10",
+			"fw":"16",
+			"fh":"16",
+			"looped":"true",
+			
+			"clips":
+			[
+				{
+					"origin_x":"0",
+					"origin_y":"0",
+					"name":"idle",
+					"frames":"0"
+				},
+				{
+					"origin_x":"0",
+					"origin_y":"0",
+					"name":"walkRight",
+					"frames":"0,1,2,3"
+				},
+
+				{
+					"origin_x":"0",
+					"origin_y":"0",
+					"name":"walkLeft",
+					"frames":"4,5,6,7"
+				},
+
+				{
+					"origin_x":"0",
+					"origin_y":"0",
+					"name":"walkDown",
+					"frames":"0,1,2,3"
+				},
+
+				{
+					"origin_x":"0",
+					"origin_y":"0",
+					"name":"walkUp",
+					"frames":"4,5,6,7"
+				}
+			]
+		}
+	]
+	
+}

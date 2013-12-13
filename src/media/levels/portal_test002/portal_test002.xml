@@ -1,0 +1,10 @@
+<level h="1" id="portal_test002" tile_h="32" tile_w="32" w="1">
+<rooms>
+<room file="Room0.xml" id="0" indexX="0" indexY="0" name="Room0">
+<gameObjects>
+<levelLink id="area0" level="../media/levels/portal_test001/portal_test001.xml" open="false" x="11" y="3"/>
+</gameObjects>
+</room>
+</rooms>
+<tilemap file="none.atm"/>
+</level>

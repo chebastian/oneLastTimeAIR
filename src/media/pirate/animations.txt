@@ -1,0 +1,97 @@
+{
+	"animations":
+	[
+		{
+			"img":"Player_Sheet",
+			"src":"../media/Player_sheet.png",
+			"fps":"20",
+			"fw":"16",
+			"fh":"16",
+			"looped":"true",
+			
+			"clips":
+			[
+				{
+					"origin_x":"0",
+					"origin_y":"0",
+					"name":"idle",
+					"frames":"0"
+				},
+				{
+					"origin_x":"0",
+					"origin_y":"0",
+					"name":"walkRight",
+					"frames":"0,1,2,3"
+				},
+
+				{
+					"origin_x":"0",
+					"origin_y":"0",
+					"name":"walkLeft",
+					"frames":"4,5,6,7"
+				},
+
+				{
+					"origin_x":"0",
+					"origin_y":"0",
+					"name":"walkDown",
+					"frames":"8,9,10"
+				},
+
+				{
+					"origin_x":"0",
+					"origin_y":"0",
+					"name":"walkUp",
+					"frames":"11,12,13"
+				}
+			]
+		},
+
+		{
+			"img":"Player_Attack",
+			"src":"../media/player_attack.png",
+			"fw":"24",
+			"fh":"16",
+			"fps":"10",
+			"looped":"false",
+
+			"clips":
+			[
+				{
+					"origin_x":"0",
+					"origin_y":"0",
+					"name":"attackR",
+					"frames":"0,1,0"
+				},
+				{
+					"origin_x":"-8",
+					"origin_y":"0",
+					"name":"attackL",
+					"frames":"2,3,2"
+				}
+			]
+
+		},
+
+		{
+			"img":"Player_AttackD",
+			"src":"../media/pirate/pirate_attackD.png",
+			"fw":"16",
+			"fh":"32",
+			"fps":"10",
+			"looped":"false",
+
+			"clips":
+			[
+				{
+					"origin_x":"0",
+					"origin_y":"5",
+					"name":"attackD",
+					"frames":"0,2,1,0"
+				}
+			]
+
+		}
+	]
+	
+}

@@ -1,0 +1,32 @@
+<level h="3" id="aawallgo" tile_h="32" tile_w="32" w="2">
+<rooms>
+<room file="0.xml" id="0" indexX="0" indexY="0" name="0"/>
+<gameObjects>
+	<door x = "2" y = "2" open="0"/>
+</gameObjects>
+<room file="Room41.xml" id="1" indexX="1" indexY="2" name="Room41"/>
+<gameObjects>
+	<door x = "2" y = "2" open="0"/>
+</gameObjects>
+<room file="Room22.xml" id="2" indexX="1" indexY="1" name="Room22"/>
+<gameObjects>
+	<door x = "2" y = "2" open="0"/>
+</gameObjects>
+<room file="Room13.xml" id="3" indexX="1" indexY="0" name="Room13"/>
+<gameObjects>
+	<door x = "2" y = "2" open="0"/>
+</gameObjects>
+<room file="Room34.xml" id="4" indexX="0" indexY="1" name="Room34"/>
+<gameObjects>
+	<door x = "2" y = "2" open="0"/>
+</gameObjects>
+</rooms>
+<tilemap file="none.atm"/>
+<game_objects>
+<doors>
+<door open="true" x="13" y="3"/>
+<door open="false" x="13" y="4"/>
+<door open="true" x="13" y="5"/>
+</doors>
+</game_objects>
+</level>

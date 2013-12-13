@@ -1,0 +1,25 @@
+{
+	"animations":
+	[
+		{
+			"img":"bullet",
+			"src":"../media/player/bullet/bullet.png",
+			"fw":"8",
+			"fh":"12",
+			"fps":"10",
+			"looped":"true",
+
+			"clips":
+			[
+				{
+					"origin_x":"0",
+					"origin_y":"0",
+					"name":"walkDown",
+					"frames":"1,2"
+				}
+			]
+
+		}
+	]
+	
+}
