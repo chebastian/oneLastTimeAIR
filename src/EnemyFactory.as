@@ -87,6 +87,10 @@ package
 				return jp;	
 			}
 			
+			var e:Enemy = parseRepeaterEnemy(type, pos);
+			if (e != null)
+				return e;
+
 			return new EnemyWalker(mGame, new Point(0, 0));
 			
 		}
@@ -100,6 +104,36 @@ package
 			}
 			
 			return "NOT FOUND";
+		}
+		
+		protected function parseRepeaterEnemy(type:String,p:Point):Enemy
+		{
+			var e:EnemyRepeater = new EnemyRepeater(mGame, p);
+			var h:Point = new Point(0, 0);
+			if (type == "repeaterLeft")
+			{
+				h = new Point( -1, 0);
+			}
+			
+			else if (type == "repeaterRight")
+			{
+				h = new Point( 1, 0);
+			}
+			
+			else if (type == "repeaterDown")
+			{
+				h = new Point( 0, 1);
+			}
+			
+			else if (type == "repeaterUp")
+			{
+				h = new Point( 0, -1);
+			}
+			else 
+				return null;
+			
+			e.setHeading(h);
+			return e;
 		}
 		
 		

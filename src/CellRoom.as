@@ -156,6 +156,7 @@ package
 			mSolidObjects.add(mRaisableWalls);
 			mSolidObjects.add(mWallSwitches);
 			mSolidObjects.add(mWallBlockers);
+			mSolidObjects.add(mGameObjects);
 			mGameObjects.sort();
 			
 			for each(var e in mGroupEnemies.members)
@@ -245,7 +246,7 @@ package
 			}
 			mSolidObjects.clear();
 			
-			mGameObjects.clear();
+			//mGameObjects.clear();
 			
 			mGame.getBulletMgr().removeAllBullets();
 			
@@ -409,29 +410,32 @@ package
 		public function HandlePlayerExit(player:Character, bound:uint):void 
 		{
 			//var bound:uint = PlayerReachExit(player);
-				
 			if (bound == BOUNDS_RIGHT)
 			{
-				player.x = LEVEL_LEFT + LEVEL_BUFFER_W;
+				//player.x = LEVEL_LEFT + LEVEL_BUFFER_W;
+				player.warpTo(new Point(LEVEL_LEFT + LEVEL_BUFFER_W, player.y));
 			}
 			else if (bound == BOUNDS_LEFT)
 			{
-				player.x = LEVEL_RIGHT;
+				//player.x = LEVEL_RIGHT;
+				player.warpTo(new Point(LEVEL_RIGHT, player.y));
 			}
 			else if (bound == BOUNDS_UP)
 			{
-				player.y = LEVEL_BOTTOM - LEVEL_BUFFER_H;
+				//player.y = LEVEL_BOTTOM - LEVEL_BUFFER_H;
+				player.warpTo(new Point(player.x, LEVEL_BOTTOM - LEVEL_BUFFER_H));
 			}
 			else if (bound == BOUNDS_DOWN)
 			{
-				player.y = LEVEL_TOP + LEVEL_BUFFER_H;
+				//player.y = LEVEL_TOP + LEVEL_BUFFER_H;
+				player.warpTo(new Point(player.x, LEVEL_TOP + LEVEL_BUFFER_H));
 			}
 			
 			if (bound != BOUNDS_NONE)
 			{
 				player.setSpawnPoint(new Point(player.x, player.y));
 				mGlobalStateAtEnter = mGame.ActiveLevel().getGlobalSwitchState();
-				FlxG.flash(0x00000000,0.2);
+				FlxG.flash(0x00000000, 0.2);
 			}
 		}
 		

@@ -65,6 +65,7 @@ package
 				mLookAt.normalize(1.0);
 				mLookAt.y = 0;
 			}
+			mLookAt.y = 0;
 		}
 		
 		public function lookForPlayer():void
@@ -138,6 +139,11 @@ package
 			var result = areFacingEachother(char) && dot < 0.0;
 			
 			return result;
+		}
+		
+		override public function getLookAt():Point 
+		{
+			return mLookAt.clone();
 		}
 		
 	}

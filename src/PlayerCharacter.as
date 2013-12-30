@@ -41,7 +41,7 @@ package
 		
 		public function killPlayer():void
 		{
-			ChangeState(new PlayerDeathState(this));
+			//ChangeState(new PlayerDeathState(this));
 		}
 		
 		override public function OnHitCharacter(char:Character):Boolean 

@@ -112,6 +112,10 @@ package
 			[Embed(source = "./media/player/bullet/charge.png")]
 			var chargedBullet:Class;
 			
+			[Embed(source = "./media/particles/particle.png")]
+			var particle:Class;
+			
+			addResource("particle", particle);
 			addResource("chargedBullet", chargedBullet);
 			addResource("playerWalkLeft", walkLeft);
 			addResource("playerWalkRight", walkRight);
@@ -124,6 +128,9 @@ package
 		
 		public function addEnemyResources():void
 		{
+			//
+			//Walker
+			//
 			[Embed(source = "./media/enemy/awlker/walkLeft.png")]
 			var walkerLeft:Class;
 			
@@ -139,6 +146,9 @@ package
 			[Embed(source = "./media/enemy/awlker/damagedRight.png")]
 			var damagedR:Class;
 			
+			//
+			//Turret
+			//
 			[Embed(source = "./media/enemy/turret/turret.png")]
 			var turret:Class;
 			
@@ -151,20 +161,51 @@ package
 			[Embed(source = "./media/enemy/turret/turretUp.png")]
 			var turretUp:Class;
 			
+			
+			//
+			//Misc
+			//
 			[Embed(source = "./media/explosion.png")]
 			var explosion:Class;
 			
 			[Embed(source = "./media/beam/beam.png")]
 			var beam:Class;
 			
+			//
+			//Flyer
+			//
 			[Embed(source = "./media/enemy/flyer/flyer.png")]
 			var flyer:Class;
 			
+			//
+			//Jumper
+			//
 			[Embed(source = "./media/enemy/jumper/jumper.png")]
 			var jumper:Class;
 			
 			[Embed(source = "./media/enemy/jumper/jumperJump.png")]
 			var jumperJump:Class;
+			
+			//
+			//Repeater
+			//
+			[Embed(source = "./media/enemy/repeater/repeaterRight.png")]
+			var repeaterRight:Class;
+			
+			[Embed(source = "./media/enemy/repeater/repeaterLeft.png")]
+			var repeaterLeft:Class;
+			
+			[Embed(source = "./media/enemy/repeater/repeaterUp.png")]
+			var repeaterUp:Class;
+			
+			[Embed(source = "./media/enemy/repeater/repeaterDown.png")]
+			var repeaterDown:Class;
+			
+			addResource("repeaterRight", repeaterRight);
+			addResource("repeaterLeft", repeaterLeft);
+			addResource("repeaterUp", repeaterUp);
+			addResource("repeaterDown", repeaterDown);
+			
 			
 			addResource("jumper", jumper);
 			addResource("jumperJump", jumperJump);

@@ -1,6 +1,7 @@
 package Particles 
 {
 	import flash.events.Event;
+	import org.flixel.FlxG;
 	/**
 	 * ...
 	 * @author Sebastian Ferngren
@@ -11,6 +12,8 @@ package Particles
 		var mAnimationsLoader:AnimationLoader;
 		var mAnimations:AnimationBank;
 		var mAnimationsPath:String;
+		var mLifeTime:Number;
+		
 		public function Particle(game:PlayState, _x:Number, _y:Number,animations:String) 
 		{
 			super(_x, _y, null);
@@ -18,6 +21,13 @@ package Particles
 			mAnimationsPath = animations;
 			mAnimationsLoader = new AnimationLoader(mGame);
 			mAnimations = new AnimationBank();
+			mLifeTime = 0;
+		}
+		
+		public function copyOf():Particle
+		{
+			var p:Particle = new Particle(mGame, x, y, mAnimationsPath);
+			return p;
 		}
 		
 		override public function Init():void 
@@ -35,9 +45,19 @@ package Particles
 		{
 			mAnimations = mAnimationsLoader.getAnimationBank();
 			mAnimations.registerAnimationsToSprite(this);
-			mAnimations.playAnimation("fire", this);
+			mAnimations.playAnimation("pulse", this);
 		}
 		
+		override public function update():void 
+		{
+			super.update();
+			mLifeTime += FlxG.elapsed;
+		}
+		
+		public function getLifeTime():Number
+		{
+			return mLifeTime;
+		}
 		
 	}
 

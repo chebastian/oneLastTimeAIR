@@ -284,6 +284,7 @@ package
 			var portals:XMLList = nodes.levelLink;
 			var blockers:XMLList = nodes.blocker;
 			var beams:XMLList = nodes.beam;
+			var walls:XMLList = nodes.wall;
 			
 			parseSwitches(switches, room);
 			parseDoors(doors, room);
@@ -291,6 +292,7 @@ package
 			parseGameObj(nodes, room, "doorSwitch");
 			parsePortals(portals, room);
 			parseBeams(beams, room);
+			parseInvisibleWalls(walls, room);
 			
 			//mGame.LAYER_ENEMY.add(mGameObjects);
 		
@@ -437,6 +439,22 @@ package
 				beam.Init();
 				beam.InitAnimations();
 				room.addBeamToRoom(beam);
+			}
+		}
+		
+		private function parseInvisibleWalls(nodes:XMLList, room:CellRoom):void
+		{
+			for each(var node in nodes)
+			{
+				var x:int = getIntAttribute("x", node);
+				var y:int = getIntAttribute("y", node);
+				var w:Number = mGame.getTileWidth();
+				var h:Number = mGame.getTileHeight();
+				x *= w;
+				y *= h;
+				
+				var wall:InvisibleWall = new InvisibleWall(x, y, w, h);
+				room.AddGameObjects(wall);
 			}
 		}
 		

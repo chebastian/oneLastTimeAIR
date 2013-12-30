@@ -177,6 +177,14 @@ package
 		{
 			return mName;
 		}
+		
+		public function warpTo(p:Point):void
+		{
+			this.x = p.x;
+			this.y = p.y;
+			this.last.x = this.x;
+			this.last.y = this.y;
+		}
 	}
 
 }

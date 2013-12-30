@@ -19,7 +19,7 @@ package
 			var y:int = new int(char.getBulletOrigin().y);
 			
 			bullet.setPosition(new Point(x, y));
-			bullet.setDir(char.Heading().clone());
+			bullet.setDir(char.getLookAt().clone());
 
 			bullet.Init();
 			bullet.SetSpeed(char.getWeapon().getBulletSpeed());

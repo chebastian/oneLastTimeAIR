@@ -1,16 +1,18 @@
 package CharacterStates 
 {
 	import CharacterController.CharacterController;
+	import com.adobe.protocols.dict.events.DefinitionHeaderEvent;
 	/**
 	 * ...
 	 * @author Sebastian Ferngren
 	 */
 	public class PlayerDeathState extends CharacterState 
 	{
-		
-		public function PlayerDeathState(char:Character) 
+		var mPlayer:PirateCharacter;
+		public function PlayerDeathState(char:PirateCharacter) 
 		{
 			super(PLAYER_DEATH_STATE, char);
+			mPlayer = char;
 		}
 		
 		override public function OnEnter(game:PlayState):void 
@@ -25,7 +27,7 @@ package CharacterStates
 		{
 			if (mCharacter.finished)
 			{
-				mCharacter.ChangeState(new PlayerSpawnState(mCharacter));
+				mCharacter.ChangeState(new PlayerSpawnState(mPlayer));
 			}
 		}
 		

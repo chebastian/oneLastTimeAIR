@@ -6,6 +6,8 @@ package CharacterController
 	import flash.geom.Point;
 	import flash.utils.Dictionary;
 	import org.flixel.FlxG;
+	import Particles.CirclePulseEmitter;
+	import Particles.Particle;
 	/**
 	 * ...
 	 * @author Sebastian Ferngren
@@ -13,9 +15,11 @@ package CharacterController
 	public class InputController extends CharacterController 
 	{
 		protected var mKeysDown:Dictionary;
-		public function InputController(char:Character,game:PlayState) 
+		protected var mChar:PirateCharacter;
+		public function InputController(char:PirateCharacter,game:PlayState) 
 		{
 			super(char, game);
+			mChar = char;
 			char.ChangeState(new CharacterWalking(mCharacter));
 			mKeysDown = new Dictionary();
 		}
@@ -72,6 +76,11 @@ package CharacterController
 				var bull:Bullet = new Bullet(mGame, 0, 0, new Point(0, 0));
 				bull = factory.setupBulletByCharacter(mCharacter, bull);
 				mGame.getBulletMgr().addBullet(bull);
+				mChar.mChargePulse.setActive(true);
+			}
+			if (FlxG.keys.justReleased("SPACE"))
+			{
+				mChar.mChargePulse.setActive(false);
 			}
 			if (keyWasHeld("SPACE", 500))
 			{
@@ -101,6 +110,18 @@ package CharacterController
 				return (time - d) > milliseconds;
 				
 			}
+			return false;
+		}
+		
+		public function kesIsHeld(key:String,delay:Number):Boolean
+		{
+			if (mKeysDown.hasOwnProperty(key))
+			{
+				var date:Date = new Date();
+				var t = date.getTime();
+				return (t - mKeysDown[key]) > delay;
+			}
+			
 			return false;
 		}
 		

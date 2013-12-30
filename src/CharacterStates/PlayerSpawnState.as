@@ -9,9 +9,11 @@ package CharacterStates
 	public class PlayerSpawnState extends CharacterState 
 	{
 		var mGame:PlayState;
-		public function PlayerSpawnState(char:Character) 
+		var mChar:PirateCharacter;
+		public function PlayerSpawnState(char:PirateCharacter) 
 		{
 			super(CHARACTER_SPAWN_STATE, char);
+			mChar = char;
 		}
 		
 		override public function OnEnter(game:PlayState):void 
@@ -21,7 +23,7 @@ package CharacterStates
 			super.OnEnter(game);
 			mCharacter.ChangeAnimation("spawn");
 			mCharacter.setPosition(mCharacter.getSpawnPoint());
-			mCharacter.setController(new CharacterController(mCharacter, game));
+			mCharacter.setController(new CharacterController(mChar, game));
 			mCharacter.setHealth(100);
 			game.ActiveLevel().ActiveRoom().reloadRoom();
 		}
@@ -31,8 +33,8 @@ package CharacterStates
 			super.OnUpdate();
 			if (mCharacter.finished)
 			{
-				mCharacter.ChangeState(new CharacterWalking(mCharacter));
-				mCharacter.setController(new InputController(mCharacter, mGame));
+				mCharacter.ChangeState(new CharacterWalking(mChar));
+				mCharacter.setController(new InputController(mChar, mGame));
 			}
 		}
 		

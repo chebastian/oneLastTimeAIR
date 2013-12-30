@@ -107,7 +107,10 @@ package
 			var deathByLength:Boolean = false;
 			deathByLength = ((mMaxDist > 0) && (travelDist() > mMaxDist));
 			
-			return (TimeSinceCreation >= LifeTime) || Killed || deathByLength;
+			if (mMaxDist > 0)
+				return deathByLength || Killed;
+			
+			return (TimeSinceCreation >= LifeTime) || Killed;
 		}
 		
 		public function travelDist():Number

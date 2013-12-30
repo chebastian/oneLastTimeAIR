@@ -167,14 +167,15 @@ package org.flixel
 		 *
 		 * @param	Object		The object you want to add to the group.
 		 *
-		 * @return	The same <code>FlxBasic</code> object that was passed in.
+ 		 * @return	The same <code>FlxBasic</code> object that was passed in.
 		 */
 		public function add(Object:FlxBasic):FlxBasic
 		{
 			//Don't bother adding an object twice.
-			if(members.indexOf(Object) >= 0)
+			if (members.indexOf(Object) >= 0)
 				return Object;
-			
+			 
+				
 			//First, look for a null entry where we can add the object.
 			var i:uint = 0;
 			var l:uint = members.length;

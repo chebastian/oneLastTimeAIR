@@ -1,0 +1,29 @@
+<level h="1" id="wallTest" tile_h="32" tile_w="32" w="2">
+<rooms>
+<room file="Room00.xml" id="0" indexX="0" indexY="0" name="Room00">
+<gameObjects>
+<wall open="true" type="invisiblewall" x="5" y="5"/>
+<wall open="true" type="invisiblewall" x="9" y="5"/>
+<wall open="true" type="invisiblewall" x="10" y="5"/>
+<wall open="true" type="invisiblewall" x="12" y="5"/>
+<wall open="true" type="invisiblewall" x="11" y="5"/>
+<wall open="true" type="invisiblewall" x="8" y="5"/>
+<wall open="true" type="invisiblewall" x="7" y="5"/>
+<wall open="true" type="invisiblewall" x="6" y="5"/>
+<wall open="true" type="invisiblewall" x="4" y="5"/>
+<wall open="true" type="invisiblewall" x="3" y="5"/>
+<wall open="true" type="invisiblewall" x="2" y="5"/>
+<wall open="true" type="invisiblewall" x="1" y="5"/>
+<wall open="true" type="invisiblewall" x="0" y="5"/>
+</gameObjects>
+</room>
+<room file="Room11.xml" id="1" indexX="1" indexY="0" name="Room11">
+<gameObjects>
+<wall open="true" type="invisiblewall" x="8" y="3"/>
+<wall open="true" type="invisiblewall" x="8" y="4"/>
+<wall open="true" type="invisiblewall" x="8" y="5"/>
+</gameObjects>
+</room>
+</rooms>
+<tilemap file="none.atm"/>
+</level>

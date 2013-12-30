@@ -1,0 +1,30 @@
+{
+	"animations":
+	[
+		{
+			"img":"particle",
+			"src":"../media/particles/particle.png",
+			"fw":"5",
+			"fh":"5",
+			"fps":"6",
+			"looped":"true",
+
+			"clips":
+			[
+				{
+					"origin_x":"0",
+					"origin_y":"0",
+					"name":"pulse",
+					"frames":"0,2,1,1"
+				},
+				{
+					"origin_x":"0",
+					"origin_y":"0",
+					"name":"explode",
+					"frames":"3,4"
+				}
+			]
+		}
+	]
+	
+}

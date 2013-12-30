@@ -43,7 +43,7 @@ package CharacterStates
 		{
 			var factory:BulletFactory = new BulletFactory(mCharacter.mGame);
 			var bull:Bullet = factory.createBulletFromCharacter(mCharacter, 1.0, 50);
-			var dir:Point = mCharacter.Heading().clone();
+			var dir:Point = mCharacter.getLookAt().clone();
 			bull.setDir(new Point(dir.x,dir.y));
 			mCharacter.mGame.getBulletMgr().addBullet(bull);
 		}

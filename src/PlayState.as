@@ -242,6 +242,7 @@ package
 		
 		public function HandleDebugInput():void
 		{
+			mLevelTest.startTest();
 			if (FlxG.keys.justPressed("ESCAPE"))
 			{
 				FlxG.switchState(new MenuState());

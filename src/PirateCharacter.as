@@ -13,6 +13,8 @@ package
 	import flash.net.URLLoader;
 	import flash.net.URLRequest;
 	import org.flixel.system.input.Input;
+	import Particles.CirclePulseEmitter;
+	import Particles.Particle;
 	import PlayerCharacter;
 	import org.flixel.*;
 	import com.adobe.serialization.json.JSON;
@@ -29,6 +31,9 @@ package
 		var mLoader:ExternalBitmap;
 		var mWalkAnim:FlxSprite;
 		var mShadow:FlxSprite;
+		
+		
+		public var mChargePulse:CirclePulseEmitter;
 		//var animLoader:AnimationLoader;
 		public function PirateCharacter(game:PlayState, pos:Point) 
 		{
@@ -69,6 +74,12 @@ package
 			mReactions.pushReaction(new DamageReaction(this, 100));
 			
 			mController = new InputController(this, mGame);
+			var par:Particle =  new Particle(mGame, 0, 0, "./media/particles/particle_animations.txt");
+			par.Init();
+			par.initAnimations();
+			mChargePulse = new CirclePulseEmitter(getPosition());
+			mChargePulse.init(100, 0.5, par);
+			
 		}
 		
 		public override function onAnimationLoadComplete(e:Event):void 
@@ -86,6 +97,7 @@ package
 				ChangeState(new PlayerDeathState(this));
 			this.mWeaponHitbox.x = this.x + (mHeading.x * this.mWeaponReach);
 			this.mWeaponHitbox.y = this.y + (mHeading.y * this.mWeaponReach);
+			mChargePulse.update();
 		}
 		
 		override public function UpdateHitbox():void 
@@ -102,6 +114,8 @@ package
 		{
 			updateShadow();
 			mShadow.draw();
+			mChargePulse.draw();
+			mChargePulse.setPosition(getPosition());
 			super.draw();
 			//this.mWeaponHitbox.draw();
 			//drawDebug(null);
@@ -167,6 +181,11 @@ package
 			
 			return false;
 			//return super.OnHitCharacter(char);
+		}
+		
+		override public function kill():void 
+		{
+			ChangeState(new PlayerDeathState(this));
 		}
 		
 	}
