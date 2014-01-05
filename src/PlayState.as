@@ -21,6 +21,7 @@ package
 	import org.flixel.FlxTileblock;
 	import org.flixel.system.FlxList;
 	import Tests.BeamSwitchTest;
+	import Tests.bossTest;
 	import Tests.ParticlesTest;
 	import Tests.TurretTest;
 	import Tests.WalkerTest;
@@ -65,6 +66,7 @@ package
 		private var mWalkerTest:WalkerTest;
 		private var mTurretTest:TurretTest;
 		private var mBeamTest:BeamSwitchTest;
+		private var mBossTest:bossTest;
 		
 		private var mResources:GameResources;
 		private var mLevelToLoad:String;
@@ -118,9 +120,9 @@ package
 			mBeamTest = new BeamSwitchTest(this);
 			
 			mLevelTest = new DynamicLevelLoaderTest(this);
-			
-			mEmitterTest = new ParticlesTest(this);
-			mEmitterTest.initTest();
+			mBossTest = new bossTest(this);
+			//mEmitterTest = new ParticlesTest(this);
+			//mEmitterTest.initTest();
 			
 		}
 		
@@ -232,6 +234,7 @@ package
 			//testUpdateCam();
 			//mWalkerTest.testUpdate();
 			//mTurretTest.udpate();
+			mBossTest.updateTest();
 			updateBullets();
 		}
 		
@@ -373,6 +376,7 @@ package
 				//mWalkerTest.initTest();
 				//mTurretTest.inti();
 				//mBeamTest.init();
+				mBossTest.initTest();
 			}
 		}
 		

@@ -30,9 +30,9 @@ package CharacterStates
 		
 		protected function onTimerComplete(e:TimerEvent)
 		{
-			mCharacter.ChangeState(new JumpingState(mCharacter));
 			timer.stop();
 			timer.removeEventListener(TimerEvent.TIMER,onTimerComplete);
+			mCharacter.ChangeState(new JumpingState(mCharacter));
 		}
 		
 		override public function OnUpdate():void 
@@ -43,6 +43,9 @@ package CharacterStates
 		override public function OnExit():void 
 		{
 			super.OnExit();
+			timer.removeEventListener(TimerEvent.TIMER, onTimerComplete);
+			timer.stop();
+			timer = null;
 		}
 		
 	}

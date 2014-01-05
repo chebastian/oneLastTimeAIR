@@ -201,6 +201,13 @@ package
 			[Embed(source = "./media/enemy/repeater/repeaterDown.png")]
 			var repeaterDown:Class;
 			
+			//
+			//Big boss
+			//
+			[Embed(source = "./media/character/bigboss/bigboss.png")]
+			var bigboss:Class;
+			addResource("bigboss", bigboss);
+			
 			addResource("repeaterRight", repeaterRight);
 			addResource("repeaterLeft", repeaterLeft);
 			addResource("repeaterUp", repeaterUp);
@@ -223,6 +230,7 @@ package
 			addResource("turretMirror", turretMirror);
 			addResource("turretDown", turretDown);
 			addResource("turretUp", turretUp);
+			
 		}
 		
 		public function addSoundEffects():void

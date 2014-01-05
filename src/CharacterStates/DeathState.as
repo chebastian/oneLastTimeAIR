@@ -1,5 +1,6 @@
 package CharacterStates 
 {
+	import CharacterController.CharacterController;
 	/**
 	 * ...
 	 * @author Sebastian Ferngren

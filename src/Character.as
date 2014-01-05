@@ -208,6 +208,14 @@ package
 			mState.OnEnter(mGame);
 		}
 		
+		public function PushState(state:CharacterState):void
+		{
+			if (mState != null)
+			{
+				
+			}
+		}
+		
 		public function IsInState(state:int):Boolean
 		{
 			if (state == mState.StateId())
@@ -463,6 +471,11 @@ package
 		public function Speed():Number
 		{
 			return WALK_SPEED;
+		}
+		
+		public function setAttacking(b:Boolean):void
+		{
+			mIsAttacking = b;
 		}
 		
 		public function Attacking():Boolean

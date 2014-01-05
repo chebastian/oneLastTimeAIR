@@ -1,0 +1,43 @@
+{
+	"animations":
+	[
+		{
+			"img":"bigboss",
+			"src":"../media/character/bigboss/bigboss.png",
+			"fw":"64",
+			"fh":"36",
+			"fps":"10",
+			"looped":"true",
+
+			"clips":
+			[
+
+				{
+					"origin_x":"0",
+					"origin_y":"0",
+					"name":"idle",	
+					"frames":"0"
+				}
+			]
+		},
+		{
+			"img":"explosion",
+			"src":"../media/explosion.png",
+			"fw":"8",
+			"fh":"8",
+			"fps":"20",
+			"looped":"true",
+
+			"clips":
+			[
+				{
+					"origin_x":"0",
+					"origin_y":"0",
+					"name":"death",
+					"frames":"0,1,2,3,2,3,1,0,2"
+				}
+			]
+		}
+	]
+	
+}

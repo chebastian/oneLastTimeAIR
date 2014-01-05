@@ -1,6 +1,8 @@
 package  
 {
+	import CharacterController.CharacterController;
 	import CharacterController.JumpController;
+	import CharacterStates.DeathState;
 	import CharacterStates.IdleState;
 	import CharacterStates.JumperIdleState;
 	import flash.events.Event;
@@ -24,6 +26,7 @@ package
 			mHeading = new Point( 0, 0);
 			allowCollisions = NONE;
 			mShadow = new FlxSprite(pos.x, pos.y, mGame.getResources().getResource("playerShadow"));
+			
 		}
 		
 		override public function Init():void 
@@ -48,6 +51,16 @@ package
 			super.draw();
 		}
 		
+		override public function update():void 
+		{
+			super.update();
+			
+			if (IsInState(CharacterState.JUMPING_STATE))
+				mIsAttacking = true;
+			else
+				mIsAttacking = false;
+		}
+		
 		protected function updateShadow():void
 		{
 			mShadow.x = x + mShadowOffset.x;
@@ -62,8 +75,10 @@ package
 		
 		override public function OnHitCharacter(char:Character):Boolean 
 		{
-			if (super.OnHitCharacter(char))
+			if (!IsInState(CharacterState.JUMPING_STATE) && super.OnHitCharacter(char) && char.Attacking())
 			{
+ 				ChangeState(new DeathState(this))
+				this.setController(new CharacterController(this, mGame));
 				allowCollisions = UP | DOWN | LEFT | RIGHT;
 				StopMoving();
 				return true;
