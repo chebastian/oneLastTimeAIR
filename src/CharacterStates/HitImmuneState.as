@@ -31,7 +31,7 @@ package CharacterStates
 		{
 			super.OnUpdate();
 			if (mCharacter.finished)
-				mCharacter.ChangeState(new WanderState(mCharacter));
+				mCharacter.PopState();//mCharacter.ChangeState(new WanderState(mCharacter));
 		}
 		
 	}

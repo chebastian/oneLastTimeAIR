@@ -82,7 +82,7 @@ package
 				UpdateHitbox();
 				updateLookAt();
 
-				mState.OnUpdate();
+				mStateMgr.getCurrentState().OnUpdate();
 			}
 		}
 		

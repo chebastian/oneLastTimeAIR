@@ -36,7 +36,8 @@ package CharacterStates
 			{
 				
 				fireBullet();
-				mCharacter.ChangeState(new WanderState(mCharacter));
+				//mCharacter.ChangeState(new WanderState(mCharacter));
+				mCharacter.PopState();
 			}
 		}
 		

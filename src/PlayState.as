@@ -23,6 +23,7 @@ package
 	import Tests.BeamSwitchTest;
 	import Tests.bossTest;
 	import Tests.ParticlesTest;
+	import Tests.StateManagerTest;
 	import Tests.TurretTest;
 	import Tests.WalkerTest;
 	import TransitionEffect;
@@ -124,6 +125,7 @@ package
 			//mEmitterTest = new ParticlesTest(this);
 			//mEmitterTest.initTest();
 			
+			var stateTest:StateManagerTest = new StateManagerTest();
 		}
 		
 		public function testCamera():void {

@@ -9,6 +9,7 @@ package
 	 import AttackReactions.ReactionManager;
 	 import CharacterController.CharacterController;
 	 import CharacterStates.IdleState;
+	 import CharacterStates.StateManager;
 	 import CharacterStates.WanderState;
 	 import flash.display.ShaderParameter;
 	 import flash.events.Event;
@@ -52,6 +53,8 @@ package
 		protected var mLookAt:Point;
 		
 		protected var mState:CharacterState;
+		protected var mStateMgr:StateManager;
+		
 		var mAnimationFrameRate:uint;
 		
 		var mHitCharCooldown:Number;
@@ -120,6 +123,7 @@ package
 			setTarget(new Point(0, 0));
 			mShadowOffset = new Point(0, 0);
 			mHealth = 100.0;
+			mStateMgr = new StateManager();
 			//Init();
 		}
 		
@@ -200,25 +204,35 @@ package
 		
 		public function ChangeState(state:CharacterState)
 		{
-			if(mState != null)
+			/*if(mState != null)
 				mState.OnExit();
 			
 			mState = null;
 			mState = state;
-			mState.OnEnter(mGame);
+			mState.OnEnter(mGame);*/
+			if(mStateMgr.hasState())
+				mStateMgr.getCurrentState().OnExit();
+				
+			mStateMgr.changeState(state);
+			mStateMgr.getCurrentState().OnEnter(mGame);
 		}
 		
 		public function PushState(state:CharacterState):void
 		{
-			if (mState != null)
-			{
-				
-			}
+			mStateMgr.pushState(state);
+			mStateMgr.getCurrentState().OnEnter(mGame);
+		}
+		
+		public function PopState():void
+		{
+			mStateMgr.getCurrentState().OnExit();
+			mStateMgr.popState();
 		}
 		
 		public function IsInState(state:int):Boolean
 		{
-			if (state == mState.StateId())
+			var st:CharacterState = mStateMgr.getCurrentState();
+			if (state == st.StateId())
 			{
 				return true;
 			}
@@ -305,7 +319,10 @@ package
 		override public function update():void 
 		{
 			super.update();
-			mState.OnUpdate();
+			//mState.OnUpdate();
+			if (mStateMgr.hasState())
+				mStateMgr.getCurrentState().OnUpdate();
+				
 			mController.update();
 			UpdateHitbox();
 			updateLookAt();

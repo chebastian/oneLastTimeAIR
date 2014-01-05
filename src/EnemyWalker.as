@@ -76,7 +76,9 @@ package
 				var minD:Number = 64;
 				trace(d);
 				if(!IsInState(CharacterState.DEATH_STATE) && !IsInState(CharacterState.DAMAGED_STATE) && !IsInState(WalkerChargeState.WALKER_STATEID) && d < minD && canSeeCharacter(mGame.ActivePlayer()))
-					ChangeState(new WalkerChargeState(this));
+				{
+					PushState(new WalkerChargeState(this));
+				}
 			}
 		 }
 		
@@ -110,7 +112,7 @@ package
 			{
 				if (areLookingAtEachOther(char) || (char.getStrength() > this.getArmorClass()))
 				{
-					ChangeState(new DamagedState(this));
+					PushState(new DamagedState(this));
 					char.OnHitCharacter(this);
 					mReactions.getReaction().onAttacked(char);
 					FlxG.play(mGame.getResources().getSound("bullet_hit_enemy"),1.0);
@@ -120,7 +122,7 @@ package
 				
 				else
 				{
-					ChangeState(new HitImmuneState(this));
+					PushState(new HitImmuneState(this));
 					FlxG.play(mGame.getResources().getSound("immune1"),1.0);
 					return true;
 				}

@@ -13,8 +13,13 @@ package CharacterStates
 		public function IdleState(id:uint, char:Character) 
 		{
 			super(id, char);
-			char.ChangeAnimation("idle");
 			mId = IDLE_STATE;
+		}
+		
+		override public function OnEnter(game:PlayState):void 
+		{
+			mCharacter.ChangeAnimation("idle");
+			super.OnEnter(game);
 		}
 		
 	}

@@ -75,7 +75,7 @@ package
 		
 		override public function OnHitCharacter(char:Character):Boolean 
 		{
-			if (!IsInState(CharacterState.JUMPING_STATE) && super.OnHitCharacter(char) && char.Attacking())
+			if (!IsInState(CharacterState.JUMPING_STATE) && mHitBox.overlaps(char) && char.Attacking())
 			{
  				ChangeState(new DeathState(this))
 				this.setController(new CharacterController(this, mGame));

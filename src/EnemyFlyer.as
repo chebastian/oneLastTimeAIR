@@ -52,7 +52,7 @@ package
 				
 			if (char.Attacking() && mHitBox.overlaps(char))
 			{
-				ChangeState(new DamagedState(this));
+				PushState(new DamagedState(this));
 				char.OnHitCharacter(this);
 				mReactions.getReaction().onAttacked(char);
 				FlxG.play(mGame.getResources().getSound("bullet_hit_enemy"),1.0);
