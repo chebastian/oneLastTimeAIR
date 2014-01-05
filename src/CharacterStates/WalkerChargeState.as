@@ -34,6 +34,7 @@ package CharacterStates
 			mCharacter.StopMoving();
 			if (mCharacter.finished)
 			{
+				
 				fireBullet();
 				mCharacter.ChangeState(new WanderState(mCharacter));
 			}
