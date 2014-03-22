@@ -33,7 +33,7 @@ package CharacterController
 		protected function handleInput():void
 		{
 			var speed:Number = mCharacter.Speed();
-				
+			var moving:Boolean = false;
 			if (mCharacter.IsInState(CharacterState.ATTACK_STATE) || mCharacter.IsInState(CharacterState.DAMAGED_STATE) )
 				return;
 				
@@ -42,28 +42,33 @@ package CharacterController
 				mCharacter.ChangeState(new AttackState(mCharacter));
 			}
 				
-			else if (FlxG.keys.pressed("LEFT"))
+			 if (FlxG.keys.pressed("LEFT"))
 			{
 				mCharacter.Move(new Point( -1, 0), speed);
+				moving = true;
 				//mCharacter.ChangeAnimation(this.Animation_WalkLeft);
 			}
 			
-			else if (FlxG.keys.pressed("RIGHT"))
+			 if (FlxG.keys.pressed("RIGHT"))
 			{
 				mCharacter.Move(new Point( 1, 0), speed);
+				moving = true;
 				//ChangeAnimation(this.Animation_WalkRight);
 			}
-			else if (FlxG.keys.pressed("UP"))
+			 if (FlxG.keys.pressed("UP"))
 			{
 				mCharacter.Move(new Point( 0, -1), speed);
+				moving = true;
 				//mCharacter.ChangeAnimation(this.Animation_WalkUp);
 			}
-			else if (FlxG.keys.pressed("DOWN"))
+			if (FlxG.keys.pressed("DOWN"))
 			{
 				mCharacter.Move(new Point( 0, 1), speed);
+				moving = true;
 				//mCharacter.ChangeAnimation(this.Animation_WalkDown);
 			}
-			else
+			
+			else if(!moving)
 			{
 				mCharacter.StopMoving();
 				mCharacter.ChangeAnimation("idle");

@@ -227,6 +227,7 @@ package
 		{
 			mStateMgr.getCurrentState().OnExit();
 			mStateMgr.popState();
+			mStateMgr.getCurrentState().OnEnter(mGame);
 		}
 		
 		public function IsInState(state:int):Boolean

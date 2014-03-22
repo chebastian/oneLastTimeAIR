@@ -1,4 +1,4 @@
-<level h="1" id="media" tile_h="32" tile_w="32" w="1">
+<level h="1" id="aboss" tile_h="32" tile_w="32" w="1">
 <rooms>
 <room file="Room000.xml" id="0" indexX="0" indexY="0" name="Room000">
 <gameObjects>

@@ -121,7 +121,7 @@ package
 			mBeamTest = new BeamSwitchTest(this);
 			
 			mLevelTest = new DynamicLevelLoaderTest(this);
-			mBossTest = new bossTest(this);
+			mBossTest = new bossTest(this,false);
 			//mEmitterTest = new ParticlesTest(this);
 			//mEmitterTest.initTest();
 			

@@ -1,0 +1,24 @@
+<level h="1" id="levels" tile_h="32" tile_w="32" w="1">
+<rooms>
+<room file="Room000.xml" id="0" indexX="0" indexY="0" name="Room000">
+<gameObjects>
+<doorSwitch open="false" type="doorSwitch" x="13" y="8"/>
+<doorSwitch open="false" type="doorSwitch" x="13" y="2"/>
+<door open="false" type="blueSwitch" x="13" y="6"/>
+<door open="false" type="blueSwitch" x="12" y="6"/>
+<door open="false" type="blueSwitch" x="11" y="6"/>
+<door open="false" type="blueSwitch" x="10" y="6"/>
+<door open="false" type="blueSwitch" x="9" y="6"/>
+<door open="false" type="blueSwitch" x="8" y="6"/>
+<door open="false" type="blueSwitch" x="7" y="6"/>
+<door open="false" type="blueSwitch" x="6" y="6"/>
+<door open="false" type="blueSwitch" x="5" y="6"/>
+<door open="false" type="blueSwitch" x="4" y="6"/>
+<door open="false" type="blueSwitch" x="3" y="6"/>
+<door open="false" type="blueSwitch" x="2" y="6"/>
+<door open="false" type="blueSwitch" x="1" y="6"/>
+</gameObjects>
+</room>
+</rooms>
+<tilemap file="none.atm"/>
+</level>

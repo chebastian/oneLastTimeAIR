@@ -1,0 +1,24 @@
+<level h="1" id="turret" tile_h="32" tile_w="32" w="1">
+<rooms>
+<room file="Room00.xml" id="0" indexX="0" indexY="0" name="Room00">
+<gameObjects>
+<enemy open="false" type="repeaterLeft" x="8" y="5"/>
+<doorSwitch open="false" type="doorSwitch" x="13" y="7"/>
+<enemy open="false" type="repeaterDown" x="11" y="2"/>
+<enemy open="false" type="repeaterDown" x="2" y="2"/>
+<enemy open="false" type="repeaterDown" x="4" y="2"/>
+<none open="false" type="none" x="3" y="2"/>
+<enemy open="false" type="repeaterDown" x="6" y="2"/>
+<door open="false" type="blueSwitch" x="4" y="4"/>
+<door open="true" type="redSwitch" x="2" y="4"/>
+<door open="true" type="redSwitch" x="7" y="4"/>
+<door open="true" type="redSwitch" x="11" y="3"/>
+<door open="true" type="redSwitch" x="1" y="4"/>
+<door open="false" type="blueSwitch" x="3" y="4"/>
+<door open="false" type="blueSwitch" x="5" y="4"/>
+<door open="true" type="redSwitch" x="6" y="4"/>
+</gameObjects>
+</room>
+</rooms>
+<tilemap file="none.atm"/>
+</level>

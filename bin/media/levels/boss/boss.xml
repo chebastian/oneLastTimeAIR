@@ -1,0 +1,8 @@
+<level h="1" id="boss" tile_h="32" tile_w="32" w="1">
+<rooms>
+<room file="Room000.xml" id="0" indexX="0" indexY="0" name="Room000">
+<gameObjects/>
+</room>
+</rooms>
+<tilemap file="none.atm"/>
+</level>

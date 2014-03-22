@@ -11,26 +11,35 @@ package Tests
 	{
 		var mEnemy:EnemyBossman;
 		var mGame:PlayState;
-		public function bossTest(game:PlayState) 
+		var mActive:Boolean;
+		public function bossTest(game:PlayState, active:Boolean) 
 		{
-			mEnemy = new EnemyBossman(game, new Point(19, 10));
+			mActive = active;
+			if (!mActive)
+				return;
+			
+			mEnemy = new EnemyBossman(game, new Point(19, 20));
 			mEnemy.Init();
 			mEnemy.InitAnimations();
 			mGame = game;
 			mEnemy.setHeading(new Point(0, 1));
+			mGame.ActiveLevel().ActiveRoom().addEnemyToRoom(mEnemy);
 		}
 		
 		public function initTest():void
 		{
-			mGame.LAYER_TEST.add(mEnemy);
+			
 		}
 		
 		public function updateTest():void
 		{
+			if (!mActive)
+				return;
+				
 			mEnemy.StopMoving();
 			if (FlxG.keys.justPressed("A"))
 			{
-				mEnemy.ChangeState(new WalkerChargeState(mEnemy));
+				mEnemy.PushState(new WalkerChargeState(mEnemy));
 			}
 			if (FlxG.keys.justPressed("S"))
 			{
@@ -38,7 +47,7 @@ package Tests
 			}
 			if (FlxG.keys.justPressed("D"))
 			{
-				mEnemy.ChangeAnimation("idle");
+				mEnemy.ChangeAnimation("walkL");
 			}
 		}
 		
